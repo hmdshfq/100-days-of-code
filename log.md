@@ -6,7 +6,14 @@
 
 **Thoughts** Althought I've learned the basic concept of useReducer() hook *function* in React, I still have to practice it a lot. 
 
-The reduce() method in JavaScript on the other hand is very easy to understand. It executes a reducer function on each element of an array. This functions churns out a single value output. The reducer function takes in two arguments the first one is an accumulator and the second one is the current value.
+The reduce() method in JavaScript on the other hand is very easy to understand. It executes a reducer function on each element of an array. This functions churns out a single value output. The reducer function takes four arguments:
+
+- Accumulator
+- Current Value
+- Current Index
+- Source Array
+
+Your reducer function's returned value is assigned to the accumulator, whose value is remembered across each iteration throughout the array, and ultimately becomes the final, single resulting value.
 
 ```js
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
