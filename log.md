@@ -19,6 +19,7 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue;
 console.log(array.reduce(reducer)); // Outputs 15
 
 console.log(array.reduce(reducer, 10)); // Outputs 25
+```
 
 **Link(s) to work**
 1. [GitHub repository for React's Context API and useReducer() Hook](https://github.com/hmdshfq/React-Context-API-and-useReducer)
