@@ -1,30 +1,24 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 029: November 29, Sunday
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: Today I learned about useReducer() function in React. I also learned about the reducer() function in JavaScript.
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts** Althought I've learned the basic concept of useReducer() hook *function* in React, I still have to practice it a lot. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+The reduce() method in JavaScript on the other hand is very easy to understand. It executes a reducer function on each element of an array. This functions churns out a single value output. The reducer function takes in two arguments the first one is an accumulator and the second one is the current value.
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+```js
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+```
+Following is an example of the complete code from Mozilla Developers blog
+```js
+const array = [1, 2, 3, 4, 5]
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+console.log(array.reduce(reducer)); // Outputs 15
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
-
-
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+console.log(array.reduce(reducer, 10)); // Outputs 25
 
 **Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+1. [GitHub repository for React's Context API and useReducer() Hook](https://github.com/hmdshfq/React-Context-API-and-useReducer)
